@@ -1,0 +1,25 @@
+:root {
+  --bg: #F0E6CE;
+  --text: #1A1208;
+  --muted: #5a4a36;
+  --accent: #9a5a2e;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0D0905; --text: #F0E6CE; --muted: #b8a88c; --accent: #C8865A; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 18px/1.6 Georgia, "EB Garamond", serif;
+}
+main { max-width: 42rem; margin: 0 auto; padding: 4rem 1rem 5rem; }
+h1 { font-size: 2.5rem; line-height: 1.1; margin: .25rem 0 1rem; font-weight: 400; }
+h2 { font: 600 .8rem/1.4 system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 2.5rem 0 .5rem; }
+.eyebrow, .meta { font: .85rem system-ui, sans-serif; color: var(--muted); margin: 0; }
+.lead { font-size: 1.2rem; }
+ul { padding-left: 1.2rem; }
+li { margin: .3rem 0; }
+a { color: var(--accent); }
+.links { margin-top: 3rem; font: .95rem system-ui, sans-serif; }
